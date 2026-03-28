@@ -1,6 +1,6 @@
 # drupaltools-skills
 
-A collection of Claude Code skills for Drupal development.
+A collection of AI Skills for Drupal development.
 
 ## Install
 
