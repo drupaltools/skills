@@ -1,0 +1,43 @@
+drupaltools-module-clone/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-module-info/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-optimize/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-contrib-lookup/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-patch/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-contrib-validator/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-oop-hooks/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-code-search/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-site-clone/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-best-practices/SKILL.md
+  ca77b27fbadeb17c 2
+drupaltools-postmortem/SKILL.md
+  ca77b27fbadeb17c 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "30caae146b45dda14743cbb31c52ebc87e6c0098",
+  "prompts": {
+    "ca77b27fbadeb17c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83079b9e-6f0f-4ab2-a0d0-8e1610264575",
+        "model": "glm-5.1"
+      },
+      "human_author": "Theodoros Ploumis <me@theodorosploumis.com>",
+      "messages": [],
+      "total_additions": 11,
+      "total_deletions": 11,
+      "accepted_lines": 11,
+      "overriden_lines": 0
+    }
+  }
+}
