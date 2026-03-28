@@ -8,8 +8,8 @@
 
 - Use Drupal GraphQL for the API
 - Implement the `graphql_compose` Drupal module
-- Create many custom `graphql_compose`-based modules (see ACEW-22 and [https://jira.eworx.gr/issues/?jql=labels%20%3D%20graphql](https://jira.eworx.gr/issues/?jql=labels%20%3D%20graphql))
-- Publish some of the modules on Drupal.org (see ACEW-22)
+- Create many custom `graphql_compose`-based modules
+- Publish some of the modules on Drupal.org
 - Removing a content or entity type in Social (e.g. Post type) is almost impossible
 - Social deeply alters forms and Drupal routes, so implementing features requires excessive caution
 
