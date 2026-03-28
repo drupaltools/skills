@@ -27,6 +27,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-best-practices` | Audit code against Drupal best practices |
 | `drupaltools-code-search` | Search Drupal contrib module source code via GitLab API |
 | `drupaltools-contrib-lookup` | Find the online source URL for a contrib code snippet |
+| `drupaltools-git-blame` | Generate a git.drupalcode.org blame URL and fetch commit details for a contrib code snippet |
 | `drupaltools-contrib-validator` | Validate modules for Drupal.org contribution readiness |
 | `drupaltools-module-clone` | Clone a module as a structural scaffold with renamed machine name |
 | `drupaltools-module-info` | Identify which module owns a file or code snippet |
