@@ -35,10 +35,11 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-patch` | Apply patches to contrib modules from any source |
 | `drupaltools-postmortem` | Generate post-mortem reports for Drupal projects |
 | `drupaltools-site-clone` | Clone a Drupal project as a clean starter template |
-| `drupaltools-tip-generator` | Show a random Drupal tip of the day |
+| `drupaltools-tip-generator` | Show or generate a random Drupal tip |
 
 ## Similar tools
 
+- [skills.sh - Search for Drupal](https://skills.sh/trending?q=drupal) - Skill aggregator, search for Drupal skills
 - [AI Skills](https://www.drupal.org/project/ai_skills) - Drupal module providing AI skills
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skill factory for Claude Code
 - [claude-skills/php-pro](https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro) - PHP Pro skill
@@ -54,6 +55,9 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 - [drupal-skill](https://github.com/Omedia/drupal-skill) - Omedia's Drupal skill
 - [drupaldev-claude-skill](https://github.com/nonzod/drupaldev-claude-skill) - Drupal dev skill for Claude
 - [drupalorg-cli](https://github.com/mglaman/drupalorg-cli/tree/main/skills) - Skills for the drupalorg CLI
-- [skills.sh - Search for Drupal](https://skills.sh/trending?q=drupal) - Skill aggregator with Drupal trending skills
 - [Surge](https://www.drupal.org/project/surge) - Drupal module with AI-assisted development tools
 - [waap-drupal](https://github.com/proofoftom/waap-drupal/tree/main/.claude/skills) - WAAP Drupal skills
+
+## License
+
+[GPL v2](LICENSE) 2026
