@@ -1,0 +1,23 @@
+README.md
+  ca77b27fbadeb17c 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "98499dabc55ca9d7cc469649457b4da55760091d",
+  "prompts": {
+    "ca77b27fbadeb17c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83079b9e-6f0f-4ab2-a0d0-8e1610264575",
+        "model": "glm-5.1"
+      },
+      "human_author": "Theodoros Ploumis <me@theodorosploumis.com>",
+      "messages": [],
+      "total_additions": 39,
+      "total_deletions": 3,
+      "accepted_lines": 38,
+      "overriden_lines": 0
+    }
+  }
+}
