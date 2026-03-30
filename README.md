@@ -24,6 +24,8 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 
 | Skill | Description |
 |---|---|
+| `drupaltools-checklist-development` | Guide teams through Drupal project development checklists |
+| `drupaltools-developer-setup` | Optimize Drupal developer machine setup and tooling |
 | `drupaltools-best-practices` | Audit code against Drupal best practices |
 | `drupaltools-code-search` | Search Drupal contrib module source code via GitLab API |
 | `drupaltools-contrib-lookup` | Find the online source URL for a contrib code snippet |
