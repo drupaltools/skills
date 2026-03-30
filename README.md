@@ -41,6 +41,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 ## Collections of Drupal skills
 
 - [skills.sh - Search for Drupal](https://skills.sh/trending?q=drupal) - Skill aggregator, search for Drupal skills
+- [skillsmp.com - Search for Drupal](https://skillsmp.com/search?q=drupal) - Skill aggregator, search for Drupal skills
 
 ## Similar tools
 
