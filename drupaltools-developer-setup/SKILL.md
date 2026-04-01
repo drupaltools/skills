@@ -75,6 +75,24 @@ ddev start
 composer global require drupal/coder squizlabs/php_codesniffer phpstan/phpstan
 ```
 
+## DDEV Commands
+
+When working inside a Drupal project with DDEV:
+
+```bash
+# Execute Drush (always available in DDEV)
+ddev drush <command>
+
+# Execute Composer
+ddev composer <command>
+
+# Common Drush workflows
+ddev drush cr          # Clear cache
+ddev drush updb        # Run database updates
+ddev drush cex         # Export config
+ddev drush en <module> # Enable module
+```
+
 ## Reference
 
 | Component | Package | Purpose |

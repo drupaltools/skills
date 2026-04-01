@@ -138,6 +138,57 @@ Auto-fix available: Yes
 Run: vendor/bin/phpcbf --standard=Drupal,DrupalPractice
 ```
 
+## DDEV Commands
+
+When checking coding standards in a Drupal project, first check if tools are installed:
+
+```bash
+# Check if composer dependencies exist
+ddev composer validate 2>/dev/null && echo "vendor_exists" || echo "run composer install first"
+```
+
+Then run tools via DDEV:
+
+```bash
+# PHPCS via DDEV
+ddev exec vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,test,profile,theme
+
+# PHPStan via DDEV
+ddev exec vendor/bin/phpstan analyse
+
+# Auto-fix via DDEV
+ddev exec vendor/bin/phpcbf --standard=Drupal,DrupalPractice
+```
+
+If vendor doesn't exist, run `ddev composer install` first.
+
+## Frontend Linting
+
+Drupal projects include linting configuration for JS/CSS. Check these files:
+
+| File | Purpose |
+|------|---------|
+| `.editorconfig` | General code style |
+| `.eslintrc.json` | JavaScript linting |
+| `.stylelintrc.json` | CSS/SCSS linting |
+| `.prettierrc.json` | Code formatting |
+| `web/core/.eslintrc.json` | Core JS config |
+
+## Using LSP for PHP
+
+For PHP symbol navigation (classes, methods, references, inheritance), use LSP tools before grep:
+
+1. **PHP LSP by Anthropic** - `php-lsp` plugin
+2. **PHPStorm** - SSE at `http://localhost:64342/sse`
+3. **cclsp** - `npx cclsp@latest setup --user`
+4. **Intelephense** - VS Code extension
+
+Use LSP for:
+- Resolving PHP symbols (classes, interfaces, traits)
+- Finding implementations, overrides, inheritance chains
+- Locating references across the codebase
+- Navigating unfamiliar codebases safely
+
 ## Resources
 
 - [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards)
