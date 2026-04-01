@@ -4,10 +4,10 @@ A collection of AI Skills for Drupal development.
 
 ## Install
 
-Install individual skills with [npx skills](https://github.com/nicokosi/skills):
+Install individual skills with [npx skills](https://skills.sh):
 
 ```bash
-npx skills add https://github.com/nicokosi/skills --skill drupaltools-best-practices
+npx skills add https://github.com/drupaltools/skills
 ```
 
 Or install all at once by cloning this repo into your skills directory:
