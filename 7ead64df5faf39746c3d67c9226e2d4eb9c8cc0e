@@ -1,0 +1,62 @@
+drupaltools-onboarding/SKILL.md
+  0ef0e30f27f49840 1-81
+drupaltools-translations/SKILL.md
+  0ef0e30f27f49840 1-197
+drupaltools-cost-estimation/SKILL.md
+  0ef0e30f27f49840 1-113
+drupaltools-module-rename/SKILL.md
+  0ef0e30f27f49840 1-52
+README.md
+  a6793f5f3ef02d38 38-39
+  0ef0e30f27f49840 34,37,40,47
+drupaltools-maintenance-contract/SKILL.md
+  0ef0e30f27f49840 1-178
+drupaltools-migration-plan/SKILL.md
+  4050182030416aae 1-297
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.3",
+  "base_commit_sha": "7ead64df5faf39746c3d67c9226e2d4eb9c8cc0e",
+  "prompts": {
+    "0ef0e30f27f49840": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "003e9d70-5586-4fb4-b266-845512f9c49b",
+        "model": "accounts/fireworks/routers/kimi-k2p5-turbo"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 625,
+      "total_deletions": 0,
+      "accepted_lines": 625,
+      "overriden_lines": 0
+    },
+    "4050182030416aae": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6352e10e-ea41-463d-bbb3-3839072a2386",
+        "model": "accounts/fireworks/routers/kimi-k2p5-turbo"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 513,
+      "total_deletions": 216,
+      "accepted_lines": 297,
+      "overriden_lines": 0
+    },
+    "a6793f5f3ef02d38": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "08bca6fa-a92c-4cc3-a118-83ee50eb43da",
+        "model": "accounts/fireworks/routers/kimi-k2p5-turbo"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 0,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
