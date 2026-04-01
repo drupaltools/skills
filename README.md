@@ -31,14 +31,20 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-contrib-lookup` | Find the online source URL for a contrib code snippet |
 | `drupaltools-git-blame` | Generate a git.drupalcode.org blame URL and fetch commit details for a contrib code snippet |
 | `drupaltools-contrib-validator` | Validate modules for Drupal.org contribution readiness |
+| `drupaltools-cost-estimation` | Estimate costs and timeline for Drupal projects |
 | `drupaltools-module-clone` | Clone a module as a structural scaffold with renamed machine name |
 | `drupaltools-module-info` | Identify which module owns a file or code snippet |
+| `drupaltools-maintenance-contract` | Drupal maintenance and support contract templates |
+| `drupaltools-migration-plan` | Guide for planning Drupal site migrations and upgrades |
+| `drupaltools-module-rename` | Rename a module's machine name throughout its codebase |
+| `drupaltools-onboarding` | Step-by-step onboarding checklist for Drupal newcomers |
 | `drupaltools-oop-hooks` | Generate Drupal 11 OOP code for hooks, plugins, and events |
 | `drupaltools-optimize` | Optimize Drupal PHP code for the current Drupal/PHP version |
 | `drupaltools-patch` | Apply patches to contrib modules from any source |
 | `drupaltools-postmortem` | Generate post-mortem reports for Drupal projects |
 | `drupaltools-site-clone` | Clone a Drupal project as a clean starter template |
 | `drupaltools-tip-generator` | Show or generate a random Drupal tip |
+| `drupaltools-translations` | Guide for Drupal multilingual and translation workflows |
 
 ## Collections of Drupal skills
 
