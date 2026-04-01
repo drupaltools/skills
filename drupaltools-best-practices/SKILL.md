@@ -61,6 +61,7 @@ Check every applicable category below. For each category not applicable to the i
 - Twig templates overridden only from the source module (not copied from random places).
 - Special pages templated: 404, 403, maintenance, login.
 - Path aliases not used as CSS class hooks.
+- Organize the twig files on a custom theme on a folder with the name `original` (just the copied twig templates from base theme or module) and a folder `override` where you have the twig templates you override. A twig with the same name should exist on both the `original` and `override` folder.
 
 ### D. Coding (PHP / module)
 - All functions/classes documented with docblocks.

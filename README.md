@@ -26,6 +26,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 |---|---|
 | `drupaltools-checklist-development` | Guide teams through Drupal project development checklists |
 | `drupaltools-coding-standards` | Check Drupal PHP code with PHPCS and PHPStan |
+| `drupaltools-site-audit` | Generate Drupal site audit reports for RFPs and proposals |
 | `drupaltools-contrib-gitlab-ci` | Generate GitLab CI for Drupal modules |
 | `drupaltools-contrib-readme` | Generate and validate Drupal module README files |
 | `drupaltools-contrib-validator` | Validate modules for Drupal.org contribution readiness |
