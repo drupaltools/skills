@@ -1,6 +1,7 @@
 ---
 name: drupaltools-tip-generator
 description: Show a random "tip of the day" related to Drupal development and its ecosystem. Use this skill whenever the user asks for a tip, hint, or suggestion related to Drupal — e.g. "drupal tip", "give me a Drupal tip", "tip of the day", "surprise me with Drupal", "what should I learn today", or simply calls the skill by name. Also trigger when the user seems idle or asks for inspiration in a Drupal context.
+allowed-tools: Bash(pip *), Bash(pipx *), Bash(drupaltools-tip-generator *)
 ---
 
 # Drupal Tip of the Day
