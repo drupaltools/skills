@@ -1,0 +1,38 @@
+README.md
+  bdb54cb416bb6390 29
+drupaltools-site-audit/SKILL.md
+  55629298cc637549 1-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.3",
+  "base_commit_sha": "0dd1416b11295020870346ca76529a9f8138f649",
+  "prompts": {
+    "55629298cc637549": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_2b6acf14dffekntB4XTcpf3Pcp-70582da1-d044-4dc7-8d11-0008d5c2dfb0",
+        "model": "unknown"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 178,
+      "total_deletions": 0,
+      "accepted_lines": 178,
+      "overriden_lines": 0
+    },
+    "bdb54cb416bb6390": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_2b6acf14dffekntB4XTcpf3Pcp-e06e13d6-5deb-494e-94fc-be951960d302",
+        "model": "unknown"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
