@@ -221,7 +221,7 @@ List what was created, what was stripped, and what the user must do next:
 Stop after the report. Typical follow-ups:
 
 - Init a ddev project `ddev config`
-- "Check the custom modules against best practices" — hand off to `drupal-best-practices`.
+- "Check the custom modules against best practices" — hand off to `drupaltools-best-practices`.
 - "Show me what config files were copied" — list `$DEST/config/**/*.yml`.
 - "Update the composer.json further" — edit specific fields on request.
 - "What modules are in the custom folder?" — hand off to `drupal-module-info` for each.

@@ -3,9 +3,20 @@ name: drupaltools-module-clone
 description: Clone a Drupal module as a structural scaffold - copy the file and folder structure of an existing local module, renaming all occurrences of the original machine name to a new one. Use this skill whenever the user wants to create a new module based on an existing one, says "clone this module", "use this module as a template", "scaffold a new module from X", or provides a module machine name and asks for a copy or starting point.
 ---
 
-# Drupal module clone
+# Drupal Module Clone
 
 Create a structural scaffold of an existing local Drupal module under a new machine name.
+
+## When to use this vs module-rename
+
+| Scenario | Skill |
+|----------|-------|
+| You want a **new** module based on an existing one (template/scaffold) | `drupaltools-module-clone` ✓ |
+| You want to **rename an existing module** in-place | `drupaltools-module-rename` |
+
+**Key difference**: Clone creates a copy with a new identity. Rename transforms the existing module.
+
+---
 
 ## Step 1 - Locate the source module
 
@@ -50,7 +61,7 @@ DEST_DIR=web/modules/custom/<new_machine_name>
 
 If the source is not under `custom/`, ask the user where to place the clone.
 
-## Step 4 - Copy and rename
+## Step 4 - Copy the module
 
 Copy the entire directory structure, excluding non-structural content:
 
@@ -68,9 +79,9 @@ rm -rf "$DEST_DIR/node_modules" "$DEST_DIR/vendor"
 
 ## Step 5 - Rename all occurrences
 
-Replace every occurrence of the old machine name with the new one - in file names, directory names, and file contents.
+**This step uses the same rename logic as `drupaltools-module-rename` (Steps 2-3).**
 
-**File and directory names:**
+### File and directory names
 ```bash
 # Rename files (deepest first to avoid path conflicts)
 find "$DEST_DIR" -depth -name "*<source_machine_name>*" | while read f; do
@@ -78,7 +89,8 @@ find "$DEST_DIR" -depth -name "*<source_machine_name>*" | while read f; do
 done
 ```
 
-**File contents** - replace all three common casing forms:
+### File contents
+Replace all three common casing forms:
 
 | Pattern | Replace with |
 |---------|-------------|
@@ -87,11 +99,16 @@ done
 | `source machine name` (human label) | `new machine name` |
 
 ```bash
+# snake_case
 grep -rl "<source_machine_name>" "$DEST_DIR" | xargs sed -i \
   "s/<source_machine_name>/<new_machine_name>/g"
-```
 
-Repeat for PascalCase and human-readable variants.
+# PascalCase
+sed -i 's/SourceMachineName/NewMachineName/g' "$DEST_DIR"/*.php
+
+# Human labels
+sed -i 's/source machine name/new machine name/g' "$DEST_DIR"/*.md
+```
 
 ## Step 6 - Clean up the scaffold
 
@@ -129,4 +146,4 @@ Stop and wait after the report. Typical follow-ups:
 - "Enable the module" - run `drush en <new_machine_name>`.
 - "Update the description" - edit the info.yml description field.
 - "Show me the file list" - list all files under the new module directory.
-- "Check it against best practices" - hand off to the `drupal-best-practices` skill.
+- "Check it against best practices" - hand off to the `drupaltools-best-practices` skill.

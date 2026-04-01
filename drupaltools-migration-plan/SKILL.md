@@ -1,9 +1,6 @@
 ---
-id: drupaltools-migration-plan
 name: drupaltools-migration-plan
-version: 1.0.0
 description: Generate comprehensive Drupal migration plans with entity mapping, ETL strategies, rollback procedures, and source analysis based on best practices from the Drupal migration guide.
-author: Theodoros Ploumis
 ---
 
 # Drupal Migration Plan Generator
