@@ -50,6 +50,21 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-tip-generator` | Show or generate a random Drupal tip |
 | `drupaltools-translations` | Guide for Drupal multilingual and translation workflows |
 
+## Agents
+
+| Agent | Description |
+|---|---|
+| `drupal-backend-dev` | Backend development tasks including custom modules, services, plugins, and API integrations |
+| `drupal-code-archaeologist` | Analyze legacy Drupal codebases for upgrade preparation and migration planning |
+| `drupal-content-architect` | Design content models, configure entity relationships, and build editorial experiences |
+| `drupal-core-contributor` | Work on Drupal core contributions, patches, and merge requests |
+| `drupal-devops-engineer` | Design, deploy, and maintain Drupal hosting infrastructure with automation |
+| `drupal-documentation-expert` | Create technical documentation, user guides, API specs, and architecture diagrams |
+| `drupal-frontend-dev` | Frontend development tasks including theming, SDC components, and Twig templates |
+| `drupal-performance-engineer` | Diagnose and resolve Drupal performance issues with data-driven solutions |
+| `drupal-security-engineer` | Audit code for security vulnerabilities and implement hardening measures |
+| `drupal-tech-lead` | Expert Drupal technical leadership for architecture decisions, team coordination, and project governance |
+
 ## Collections of Drupal skills
 
 - [skills.sh - Search for Drupal](https://skills.sh/trending?q=drupal) - Skill aggregator, search for Drupal skills
