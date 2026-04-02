@@ -1,0 +1,23 @@
+README.md
+  d9759201e87609f7 53-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "7efdb2a141301caf6d3a1ddbf575fc8c8db22691",
+  "prompts": {
+    "d9759201e87609f7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5b52ff98-8aa4-42dd-952b-db7a973700c6",
+        "model": "accounts/fireworks/routers/kimi-k2p5-turbo"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 22,
+      "total_deletions": 7,
+      "accepted_lines": 15,
+      "overriden_lines": 0
+    }
+  }
+}
