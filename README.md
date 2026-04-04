@@ -91,6 +91,15 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 - [Surge](https://www.drupal.org/project/surge) - Drupal module with AI-assisted development tools
 - [waap-drupal](https://github.com/proofoftom/waap-drupal/tree/main/.claude/skills) - WAAP Drupal skills
 
+## Plan
+
+> Some proposals for new Skills or Agents to add.
+
+- drupaltools-tdd: PHPUnit kernel/functional/unit tests for Drupal
+- drupaltools-upgrade: Drupal 9→10→11 upgrade patterns
+- drupaltools-accessibility: WCAG 2.2 AA compliance for forms/components
+- drupaltools-performance: xhprof, webprofiler, query optimization
+
 ## License
 
 [GPL v2](LICENSE) 2026
