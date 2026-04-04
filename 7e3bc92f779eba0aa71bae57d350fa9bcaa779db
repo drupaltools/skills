@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "7e3bc92f779eba0aa71bae57d350fa9bcaa779db",
+  "prompts": {
+    "078197c337a74a31": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_2a73a09e8ffeqSTlET434NyY55",
+        "model": "opencode/big-pickle"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 858,
+      "total_deletions": 0,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    }
+  }
+}
