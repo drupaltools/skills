@@ -88,9 +88,9 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 - [drupal-workflow](https://github.com/gkastanis/drupal-workflow) - Drupal AI workflow resources
 - [drupaldev-claude-skill](https://github.com/nonzod/drupaldev-claude-skill) - Drupal dev skill for Claude
 - [drupalorg-cli](https://github.com/mglaman/drupalorg-cli/tree/main/skills) - Skills for the drupalorg CLI
+- [lakedrops skills](https://gitlab.lakedrops.com/ai/skills) - Lakedrops Drupal skills
 - [Surge](https://www.drupal.org/project/surge) - Drupal module with AI-assisted development tools
 - [waap-drupal](https://github.com/proofoftom/waap-drupal/tree/main/.claude/skills) - WAAP Drupal skills
-- [lakedrops skills](https://gitlab.lakedrops.com/ai/skills) - Lakedrops Drupal skills
 
 ## Plan
 
