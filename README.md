@@ -90,6 +90,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 - [drupalorg-cli](https://github.com/mglaman/drupalorg-cli/tree/main/skills) - Skills for the drupalorg CLI
 - [Surge](https://www.drupal.org/project/surge) - Drupal module with AI-assisted development tools
 - [waap-drupal](https://github.com/proofoftom/waap-drupal/tree/main/.claude/skills) - WAAP Drupal skills
+- [lakedrops skills](https://gitlab.lakedrops.com/ai/skills) - Lakedrops Drupal skills
 
 ## Plan
 
