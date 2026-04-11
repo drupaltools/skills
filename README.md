@@ -96,10 +96,12 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 
 > Some proposals for new Skills or Agents to add.
 
+- drupaltools-code-search: Update to use https://api.tresbien.tech/v1/search for contrib search
 - drupaltools-tdd: PHPUnit kernel/functional/unit tests for Drupal
 - drupaltools-upgrade: Drupal 9→10→11 upgrade patterns
 - drupaltools-accessibility: WCAG 2.2 AA compliance for forms/components
 - drupaltools-performance: xhprof, webprofiler, query optimization
+- drupaltools-ui-field/entity/form/views: Create, edit etc UI related modes for Drupal
 
 ## License
 
