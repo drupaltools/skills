@@ -24,28 +24,29 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 
 | Skill | Description |
 |---|---|
+| `drupaltools-best-practices` | Audit code against Drupal best practices |
 | `drupaltools-checklist-development` | Guide teams through Drupal project development checklists |
+| `drupaltools-code-search` | Search Drupal contrib module source code via GitLab API |
 | `drupaltools-coding-standards` | Check Drupal PHP code with PHPCS and PHPStan |
-| `drupaltools-site-audit` | Generate Drupal site audit reports for RFPs and proposals |
 | `drupaltools-contrib-gitlab-ci` | Generate GitLab CI for Drupal modules |
+| `drupaltools-contrib-lookup` | Find the online source URL for a contrib code snippet |
 | `drupaltools-contrib-readme` | Generate and validate Drupal module README files |
 | `drupaltools-contrib-validator` | Validate modules for Drupal.org contribution readiness |
-| `drupaltools-developer-setup` | Optimize Drupal developer machine setup and tooling |
-| `drupaltools-best-practices` | Audit code against Drupal best practices |
-| `drupaltools-code-search` | Search Drupal contrib module source code via GitLab API |
-| `drupaltools-contrib-lookup` | Find the online source URL for a contrib code snippet |
-| `drupaltools-git-blame` | Generate a git.drupalcode.org blame URL and fetch commit details for a contrib code snippet |
 | `drupaltools-cost-estimation` | Estimate costs and timeline for Drupal projects |
-| `drupaltools-module-clone` | Clone a module as a structural scaffold with renamed machine name |
-| `drupaltools-module-info` | Identify which module owns a file or code snippet |
+| `drupaltools-developer-setup` | Optimize Drupal developer machine setup and tooling |
+| `drupaltools-git-blame` | Generate a git.drupalcode.org blame URL and fetch commit details for a contrib code snippet |
+| `drupaltools-issue-generate` | Generate Drupal.org issue summaries ready for issue forms |
 | `drupaltools-maintenance-contract` | Drupal maintenance and support contract templates |
 | `drupaltools-migration-plan` | Guide for planning Drupal site migrations and upgrades |
+| `drupaltools-module-clone` | Clone a module as a structural scaffold with renamed machine name |
+| `drupaltools-module-info` | Identify which module owns a file or code snippet |
 | `drupaltools-module-rename` | Rename a module's machine name throughout its codebase |
 | `drupaltools-onboarding` | Step-by-step onboarding checklist for Drupal newcomers |
 | `drupaltools-oop-hooks` | Generate Drupal 11 OOP code for hooks, plugins, and events |
 | `drupaltools-optimize` | Optimize Drupal PHP code for the current Drupal/PHP version |
 | `drupaltools-patch` | Apply patches to contrib modules from any source |
 | `drupaltools-postmortem` | Generate post-mortem reports for Drupal projects |
+| `drupaltools-site-audit` | Generate Drupal site audit reports for RFPs and proposals |
 | `drupaltools-site-clone` | Clone a Drupal project as a clean starter template |
 | `drupaltools-tip-generator` | Show or generate a random Drupal tip |
 | `drupaltools-translations` | Guide for Drupal multilingual and translation workflows |
@@ -83,6 +84,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 - [drupal-agent-resources](https://github.com/madsnorgaard/drupal-agent-resources) - Drupal agent resources
 - [drupal-claude-code-sub-agent-collective](https://github.com/gkastanis/drupal-claude-code-sub-agent-collective/tree/main/templates/skills) - Sub-agent collective with Drupal skill templates
 - [drupal-claude-skills](https://github.com/grasmash/drupal-claude-skills) - Grasmash's Drupal Claude skills
+- [drupal-contribute-fix](https://github.com/scottfalconer/drupal-contribute-fix) - Turn local Drupal fixes into contributions
 - [drupal-issue-queue](https://github.com/scottfalconer/drupal-issue-queue) - Drupal issue queue skill
 - [drupal-skill](https://github.com/Omedia/drupal-skill) - Omedia's Drupal skill
 - [drupal-workflow](https://github.com/gkastanis/drupal-workflow) - Drupal AI workflow resources
