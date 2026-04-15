@@ -1,2 +1,4 @@
 # Ignore skills from other vendors
 skills/drupalorg-*
+
+*.env
