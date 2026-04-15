@@ -1,0 +1,39 @@
+skills/drupaltools-issue-generate/SKILL.md
+  f011218c8e21c4f3 1-2,8-9,11,38-39,42,45,49,52,55,58,93,109-115,118,121,125,128-129,131-137
+  360ea95e1fd151ff 3-6,12-37,40-41,43-44,46-48,50-51,53-54,56-57,59-92,94-108,116-117,119-120,122-124,126-127,130,143
+README.md
+  f011218c8e21c4f3 27,29,32,35,38,41-42,49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "d1dafb2c4d2d0e2707a480a10281fbee528882cd",
+  "prompts": {
+    "360ea95e1fd151ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "16ade6ad-945f-44ba-b715-249ed51f59b9",
+        "model": "accounts/fireworks/models/qwen3p6-plus"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 119,
+      "total_deletions": 63,
+      "accepted_lines": 103,
+      "overriden_lines": 1
+    },
+    "f011218c8e21c4f3": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "fbdba1f4-8860-4e5f-9a8f-6596ac031d07",
+        "model": "default"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 99,
+      "total_deletions": 9,
+      "accepted_lines": 41,
+      "overriden_lines": 3
+    }
+  }
+}
