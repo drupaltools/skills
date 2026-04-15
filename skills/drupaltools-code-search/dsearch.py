@@ -12,16 +12,10 @@ Usage:
 
 import argparse
 import json
-import os
 import sys
+import urllib.parse
+import urllib.request
 from pathlib import Path
-from urllib.parse import quote
-
-try:
-    import requests
-except ImportError:
-    print("Error: requests module required. Install with: pip install requests")
-    sys.exit(1)
 
 
 # Colors for terminal output
@@ -36,9 +30,11 @@ class Colors:
     END = "\033[0m"
 
 
+GITLAB_API = "https://git.drupalcode.org/api/v4"
+
+
 def load_token():
     """Load GitLab token from .env file."""
-    # Resolve symlink to get the actual script directory
     script_path = Path(__file__).resolve().parent
     env_path = script_path / ".env"
     if not env_path.exists():
@@ -54,6 +50,33 @@ def load_token():
     sys.exit(1)
 
 
+def gitlab_request(path, token=None):
+    """Make an authenticated GET request to the GitLab API."""
+    url = f"{GITLAB_API}{path}"
+    headers = {"Accept": "application/json"}
+    if token:
+        headers["PRIVATE-TOKEN"] = token
+
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        if e.code == 401:
+            print(f"{Colors.RED}Error: Token invalid or expired.{Colors.END}")
+        elif e.code == 403:
+            print(f"{Colors.RED}Error: Token lacks read_api scope.{Colors.END}")
+        elif e.code == 404:
+            print(f"{Colors.RED}Error: Resource not found.{Colors.END}")
+        else:
+            print(f"{Colors.RED}Error: API returned HTTP {e.code}: {body}{Colors.END}")
+        sys.exit(1)
+    except urllib.error.URLError as e:
+        print(f"{Colors.RED}Error: Could not reach API: {e.reason}{Colors.END}")
+        sys.exit(1)
+
+
 def search_api(token, term, page=1, per_page=100, extension=None):
     """Search GitLab API for code snippets."""
     exclusions = "-path:web/* -path:core/* -path:docroot -path:modules/contrib/*"
@@ -61,47 +84,38 @@ def search_api(token, term, page=1, per_page=100, extension=None):
     if extension:
         search_term += f" extension:{extension}"
 
-    encoded_term = quote(search_term, safe='')
+    encoded_term = urllib.parse.quote(search_term, safe="")
 
-    url = (
-        f"https://git.drupalcode.org/api/v4/groups/2/search"
-        f"?scope=blobs&search={encoded_term}&per_page={per_page}&page={page}"
+    path = (
+        f"/groups/2/search?scope=blobs&search={encoded_term}"
+        f"&per_page={per_page}&page={page}"
     )
-
-    headers = {"PRIVATE-TOKEN": token}
-    response = requests.get(url, headers=headers)
-
-    if response.status_code == 401:
-        print(f"{Colors.RED}Error: Token invalid or expired.{Colors.END}")
-        sys.exit(1)
-    elif response.status_code == 403:
-        print(f"{Colors.RED}Error: Token lacks read_api scope.{Colors.END}")
-        sys.exit(1)
-    elif response.status_code == 404:
-        print(f"{Colors.RED}Error: Group not found - check group ID 2.{Colors.END}")
-        sys.exit(1)
-
-    return response.json()
+    return gitlab_request(path, token)
 
 
 def get_project_info(token, project_id):
     """Get project name from GitLab API."""
-    url = f"https://git.drupalcode.org/api/v4/projects/{project_id}"
-    headers = {"PRIVATE-TOKEN": token}
-    response = requests.get(url, headers=headers)
-    data = response.json()
+    data = gitlab_request(f"/projects/{project_id}", token)
     return data.get("path_with_namespace", data.get("name", ""))
 
 
 def get_default_branch(token, project_id):
     """Get default branch name for stable URLs."""
-    url = f"https://git.drupalcode.org/api/v4/projects/{project_id}/repository/branches"
-    headers = {"PRIVATE-TOKEN": token}
-    response = requests.get(url, headers=headers)
-    branches = response.json()
+    branches = gitlab_request(f"/projects/{project_id}/repository/branches", token)
     if branches and len(branches) > 0:
         return branches[0].get("name", "main")
     return "main"
+
+
+def get_latest_tag(token, project_id):
+    """Get the latest release tag for stable URLs."""
+    tags = gitlab_request(f"/projects/{project_id}/repository/tags", token)
+    if isinstance(tags, list):
+        for tag in tags:
+            name = tag.get("name", "")
+            if name and name[0].isdigit():
+                return name
+    return None
 
 
 def format_code_snippet(data, max_length=200):
@@ -109,7 +123,6 @@ def format_code_snippet(data, max_length=200):
     if not data:
         return ""
 
-    # Clean up the snippet
     lines = data.split("\n")[:3]
     snippet = "\n".join(lines)
 
@@ -119,24 +132,39 @@ def format_code_snippet(data, max_length=200):
     return snippet
 
 
+def get_stable_ref(token, project_id, fallback_ref):
+    """Get a stable ref (tag > branch > fallback commit hash)."""
+    tag = get_latest_tag(token, project_id)
+    if tag:
+        return tag, "tags"
+    branch = get_default_branch(token, project_id)
+    if branch:
+        return branch, "heads"
+    return fallback_ref, None
+
+
 def print_result(result, token, show_branch=False):
     """Print a single search result with stable URL."""
     project_id = result.get("project_id")
     filename = result.get("filename")
     startline = result.get("startline")
     data = result.get("data", "")
+    ref = result.get("ref", "master")
 
     # Get module name
     module_name = get_project_info(token, project_id).replace("project/", "")
 
-    # Get default branch for stable URL
+    # Get stable ref for URL
     if show_branch:
-        branch = get_default_branch(token, project_id)
-        ref_part = branch
+        stable_ref, ref_type = get_stable_ref(token, project_id, ref)
+        if ref_type == "tags":
+            url = f"https://git.drupalcode.org/project/{module_name}/-/blob/{stable_ref}/{filename}?ref_type=tags#L{startline}"
+        elif ref_type == "heads":
+            url = f"https://git.drupalcode.org/project/{module_name}/-/blob/{stable_ref}/{filename}?ref_type=heads#L{startline}"
+        else:
+            url = f"https://git.drupalcode.org/project/{module_name}/-/blob/{stable_ref}/{filename}#L{startline}"
     else:
-        ref_part = result.get("ref", "master")
-
-    url = f"https://git.drupalcode.org/project/{module_name}/-/blob/{ref_part}/{filename}#L{startline}"
+        url = f"https://git.drupalcode.org/project/{module_name}/-/blob/{ref}/{filename}#L{startline}"
 
     # Print formatted result
     print(f"\n{Colors.BOLD}{Colors.CYAN}▸ {module_name}{Colors.END}")
@@ -156,14 +184,16 @@ def print_json(results, token):
     for result in results:
         project_id = result.get("project_id")
         module_name = get_project_info(token, project_id).replace("project/", "")
+        tag = get_latest_tag(token, project_id)
         branch = get_default_branch(token, project_id)
+        stable_ref = tag or branch or result.get("ref", "master")
 
         output.append({
             "module": module_name,
-            "branch": branch,
+            "branch": stable_ref,
             "file": result.get("filename"),
             "line": result.get("startline"),
-            "url": f"https://git.drupalcode.org/project/{module_name}/-/blob/{branch}/{result.get('filename')}#L{result.get('startline')}",
+            "url": f"https://git.drupalcode.org/project/{module_name}/-/blob/{stable_ref}/{result.get('filename')}#L{result.get('startline')}",
             "snippet": format_code_snippet(result.get("data", ""))
         })
 

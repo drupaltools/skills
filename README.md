@@ -31,6 +31,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-contrib-gitlab-ci` | Generate GitLab CI for Drupal modules |
 | `drupaltools-contrib-lookup` | Find the online source URL for a contrib code snippet |
 | `drupaltools-contrib-readme` | Generate and validate Drupal module README files |
+| `drupaltools-contrib-search` | Search Drupal contrib and core source code via search.tresbien.tech API |
 | `drupaltools-contrib-validator` | Validate modules for Drupal.org contribution readiness |
 | `drupaltools-cost-estimation` | Estimate costs and timeline for Drupal projects |
 | `drupaltools-developer-setup` | Optimize Drupal developer machine setup and tooling |
@@ -98,12 +99,11 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 
 > Some proposals for new Skills or Agents to add.
 
-- drupaltools-code-search: Update to use https://api.tresbien.tech/v1/search for contrib search
+- drupaltools-ui-field/entity/form/views: Create, edit etc UI related modes for Drupal
 - drupaltools-tdd: PHPUnit kernel/functional/unit tests for Drupal
 - drupaltools-upgrade: Drupal 9→10→11 upgrade patterns
 - drupaltools-accessibility: WCAG 2.2 AA compliance for forms/components
 - drupaltools-performance: xhprof, webprofiler, query optimization
-- drupaltools-ui-field/entity/form/views: Create, edit etc UI related modes for Drupal
 
 ## License
 

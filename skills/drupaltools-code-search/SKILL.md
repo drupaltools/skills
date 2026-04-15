@@ -191,12 +191,6 @@ A Python CLI tool `dsearch.py` is available for quick searches without invoking 
 ./dsearch.py "TokenInterface" --no-branch
 ```
 
-### Requirements
-
-```bash
-pip install requests
-```
-
 The CLI tool reads `DRUPALORG_GITLAB_TOKEN` from `.env` and automatically:
 - Fetches module names
 - Gets default branches for stable URLs
