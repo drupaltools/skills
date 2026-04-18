@@ -7,6 +7,8 @@ description: >
   When the user says "issue title", "issue body", "issue summary", or similar.
 ---
 
+# Drupal Issue Generator
+
 ## About
 
 Produce a single fenced Markdown code block containing a Drupal.org issue title

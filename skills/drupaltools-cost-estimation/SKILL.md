@@ -9,6 +9,8 @@ Help estimate costs and timelines for Drupal projects using a structured approac
 
 Source: https://raw.githubusercontent.com/theodorosploumis/notes/refs/heads/master/drupal/cost.md
 
+> **Extended Parameters**: See HELPER.md for automated project analysis, git metrics, advanced task types, and feature-based parameters.
+
 ## Overview
 
 Provide comprehensive cost estimates by analyzing project scope across multiple dimensions:

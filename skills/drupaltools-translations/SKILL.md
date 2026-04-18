@@ -161,7 +161,7 @@ When evaluating translation solutions, check for:
 - **weblate.org** - Open source translation platform
 - **localizejs.com** - JavaScript/on-the-fly translation
 
-### Utilities
+### Desktop & Online Utilities
 - **poedit.net** - Desktop PO file editor
 - **mlocati.github.io/jsgettext** - Online PO/POT/MO converter
 
