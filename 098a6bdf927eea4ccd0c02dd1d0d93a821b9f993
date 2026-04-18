@@ -1,0 +1,29 @@
+skills/drupaltools-cost-estimation/SKILL.md
+  b3d9af5e9aff9c49 12-13
+skills/drupaltools-cost-estimation/HELPER.md
+  b3d9af5e9aff9c49 1-205
+skills/drupaltools-issue-generate/SKILL.md
+  b3d9af5e9aff9c49 10-11
+skills/drupaltools-translations/SKILL.md
+  b3d9af5e9aff9c49 164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.0",
+  "base_commit_sha": "098a6bdf927eea4ccd0c02dd1d0d93a821b9f993",
+  "prompts": {
+    "b3d9af5e9aff9c49": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f6f66c98-f4b0-47b2-9c0e-0f39a4294576",
+        "model": "accounts/fireworks/routers/kimi-k2p5-turbo"
+      },
+      "human_author": "Theodoros Ploumis",
+      "messages": [],
+      "total_additions": 210,
+      "total_deletions": 1,
+      "accepted_lines": 210,
+      "overriden_lines": 0
+    }
+  }
+}
