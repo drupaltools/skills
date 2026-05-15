@@ -142,3 +142,16 @@ If everything passes: write a short paragraph summarising what is correct and wh
 - Drupal-spec-tool (automated testing): https://github.com/acquia/drupal-spec-tool
 - Composer best practices: https://www.lullabot.com/articles/drupal-8-composer-best-practices
 - Module incompatibilities (Acquia): https://docs.acquia.com/acquia-cloud/develop/drupal/module-incompatibilities
+
+## Partials
+
+- `partials/blocks/SKILL.md`
+- `partials/config-parser/SKILL.md`
+- `partials/fields/SKILL.md`
+- `partials/forms/SKILL.md`
+- `partials/nodes/SKILL.md`
+- `partials/other-content-entities/SKILL.md`
+- `partials/taxonomy/SKILL.md`
+- `partials/text-formats-editors/SKILL.md`
+- `partials/theming/SKILL.md`
+- `partials/views/SKILL.md`
