@@ -1,4 +1,9 @@
-## Nodes checks
+---
+name: drupaltools-best-practices/nodes
+description: Partial sub-skill checks for nodes within drupaltools-best-practices.
+---
+
+# Nodes checks
 - Revisions should not be globally enabled unless workflow requires them.
 - Bundle machine names should be singular and descriptive.
 - Avoid overloading nodes for non-node content behavior.

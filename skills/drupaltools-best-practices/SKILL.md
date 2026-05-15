@@ -145,13 +145,13 @@ If everything passes: write a short paragraph summarising what is correct and wh
 
 ## Partials
 
-- `partials/blocks/SKILL.md`
-- `partials/config-parser/SKILL.md`
-- `partials/fields/SKILL.md`
-- `partials/forms/SKILL.md`
-- `partials/nodes/SKILL.md`
-- `partials/other-content-entities/SKILL.md`
-- `partials/taxonomy/SKILL.md`
-- `partials/text-formats-editors/SKILL.md`
-- `partials/theming/SKILL.md`
-- `partials/views/SKILL.md`
+- `partials/blocks/SKILL.md` (partial sub-skill)
+- `partials/config-parser/SKILL.md` (partial sub-skill)
+- `partials/fields/SKILL.md` (partial sub-skill)
+- `partials/forms/SKILL.md` (partial sub-skill)
+- `partials/nodes/SKILL.md` (partial sub-skill)
+- `partials/other-content-entities/SKILL.md` (partial sub-skill)
+- `partials/taxonomy/SKILL.md` (partial sub-skill)
+- `partials/text-formats-editors/SKILL.md` (partial sub-skill)
+- `partials/theming/SKILL.md` (partial sub-skill)
+- `partials/views/SKILL.md` (partial sub-skill)
