@@ -88,6 +88,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 - [drupal-claude-skills](https://github.com/grasmash/drupal-claude-skills) - Grasmash's Drupal Claude skills
 - [drupal-contribute-fix](https://github.com/scottfalconer/drupal-contribute-fix) - Turn local Drupal fixes into contributions
 - [drupal-issue-queue](https://github.com/scottfalconer/drupal-issue-queue) - Drupal issue queue skill
+- [drupal-maintenance-skills](https://github.com/ivanboring/drupal-maintenance-skills) - drupal-maintenance-skills
 - [drupal-skill](https://github.com/Omedia/drupal-skill) - Omedia's Drupal skill
 - [drupal-workflow](https://github.com/gkastanis/drupal-workflow) - Drupal AI workflow resources
 - [drupaldev-claude-skill](https://github.com/nonzod/drupaldev-claude-skill) - Drupal dev skill for Claude
