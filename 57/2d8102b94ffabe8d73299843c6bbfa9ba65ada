@@ -1,0 +1,28 @@
+skills/drupaltools-phpstan/SKILL.md
+  s_ff04540cbae17e::t_1f1bcceacbb541 1-86
+skills/drupaltools-markdownlint/SKILL.md
+  s_ff04540cbae17e::t_1312814e7bf793 1-100
+skills/drupaltools-phpcs/SKILL.md
+  s_ff04540cbae17e::t_08942d799356d2 1-89
+skills/drupaltools-phpunit/SKILL.md
+  s_ff04540cbae17e::t_5557997b1c7577 1-89
+README.md
+  s_ff04540cbae17e::t_6d003afde058fc 50-52
+  s_ff04540cbae17e::t_6d210162689273 41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "572d8102b94ffabe8d73299843c6bbfa9ba65ada",
+  "prompts": {},
+  "sessions": {
+    "s_ff04540cbae17e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f57ea707-a275-4d00-865e-31b64720c282",
+        "model": "glm-5.2"
+      },
+      "human_author": "Theodoros Ploumis <me@theodorosploumis.com>"
+    }
+  }
+}
