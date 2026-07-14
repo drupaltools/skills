@@ -38,6 +38,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-git-blame` | Generate a git.drupalcode.org blame URL and fetch commit details for a contrib code snippet |
 | `drupaltools-issue-generate` | Generate Drupal.org issue summaries ready for issue forms |
 | `drupaltools-maintenance-contract` | Drupal maintenance and support contract templates |
+| `drupaltools-markdownlint` | Run the project markdownlint script and fix markdown violations |
 | `drupaltools-migration-plan` | Guide for planning Drupal site migrations and upgrades |
 | `drupaltools-module-clone` | Clone a module as a structural scaffold with renamed machine name |
 | `drupaltools-module-info` | Identify which module owns a file or code snippet |
@@ -46,6 +47,9 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 | `drupaltools-oop-hooks` | Generate Drupal 11 OOP code for hooks, plugins, and events |
 | `drupaltools-optimize` | Optimize Drupal PHP code for the current Drupal/PHP version |
 | `drupaltools-patch` | Apply patches to contrib modules from any source |
+| `drupaltools-phpcs` | Run PHPCS and fix the reported coding standards violations |
+| `drupaltools-phpstan` | Run PHPStan static analysis and fix the reported errors |
+| `drupaltools-phpunit` | Run the custom PHPUnit suite and fix the reported failures |
 | `drupaltools-postmortem` | Generate post-mortem reports for Drupal projects |
 | `drupaltools-site-audit` | Generate Drupal site audit reports for RFPs and proposals |
 | `drupaltools-site-clone` | Clone a Drupal project as a clean starter template |
