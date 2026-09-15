@@ -79,6 +79,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 ## Similar tools
 
 - [AI Skills](https://www.drupal.org/project/ai_skills) - Drupal module providing AI skills
+- [AI Best Practices for Drupal](https://www.drupal.org/project/ai_best_practices)
 - [camoa/claude-skills](https://github.com/camoa/claude-skills) - Custom plugins and tools for Claude Code with Drupal
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skill factory for Claude Code
 - [claude-skills/php-pro](https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro) - PHP Pro skill
