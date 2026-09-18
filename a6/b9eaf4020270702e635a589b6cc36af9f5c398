@@ -1,0 +1,14 @@
+.gitignore
+  h_18931ba0e9066f 5-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a6b9eaf4020270702e635a589b6cc36af9f5c398",
+  "prompts": {},
+  "humans": {
+    "h_18931ba0e9066f": {
+      "author": "Theodoros Ploumis <me@theodorosploumis.com>"
+    }
+  }
+}
