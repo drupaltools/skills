@@ -2,4 +2,6 @@
 skills/drupalorg-*
 skills/drupal-*
 
+skills/.system
+
 *.env
