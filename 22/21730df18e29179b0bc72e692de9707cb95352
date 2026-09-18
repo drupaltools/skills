@@ -1,0 +1,37 @@
+agents/drupal-performance-engineer.md
+  s_691ae518a114c8::t_7f88d1ae4d3540 3-14
+agents/drupal-devops-engineer.md
+  s_691ae518a114c8::t_31b722ab6f92eb 3-14
+agents/drupal-core-contributor.md
+  s_691ae518a114c8::t_9cb4c3aa573959 3-10
+agents/drupal-frontend-dev.md
+  s_691ae518a114c8::t_fb45b97c65aa53 3-14
+agents/drupal-documentation-expert.md
+  s_691ae518a114c8::t_30ab9e28cf8db1 3-15
+agents/drupal-backend-dev.md
+  s_691ae518a114c8::t_5a690cf5c6f519 3-17
+agents/drupal-content-architect.md
+  s_691ae518a114c8::t_142c32c488ce4c 3-12
+agents/drupal-code-archaeologist.md
+  s_691ae518a114c8::t_fe4669a9764036 3-12
+agents/drupal-tech-lead.md
+  s_691ae518a114c8::t_7dc75e6daae856 3-12
+agents/drupal-security-engineer.md
+  s_691ae518a114c8::t_45a003c9f6cda0 3-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2221730df18e29179b0bc72e692de9707cb95352",
+  "prompts": {},
+  "sessions": {
+    "s_691ae518a114c8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d75e4f54-6ab7-4266-8a42-b32f99ade408",
+        "model": "deepseek-flash"
+      },
+      "human_author": "Theodoros Ploumis <me@theodorosploumis.com>"
+    }
+  }
+}
