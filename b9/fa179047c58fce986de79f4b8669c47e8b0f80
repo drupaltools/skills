@@ -1,0 +1,26 @@
+agents/drupal-code-reviewer.md
+  s_efe0cd113cfdc8::t_728f4e7395e3c2 1-119
+README.md
+  s_efe0cd113cfdc8::t_4b320c07f3ba70 66
+  s_efe0cd113cfdc8::t_6608961f5d7623 29
+skills/drupaltools-code-review/SKILL.md
+  s_efe0cd113cfdc8::t_fdaddef4a2339f 1-265,267-320,322-388
+  s_efe0cd113cfdc8::t_bf1497a7c327d4 266
+  s_efe0cd113cfdc8::t_6aa8761ee4e953 321
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b9fa179047c58fce986de79f4b8669c47e8b0f80",
+  "prompts": {},
+  "sessions": {
+    "s_efe0cd113cfdc8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4bcb4876-8f11-4f9c-a7c5-281a80a40f9a",
+        "model": "deepseek-flash"
+      },
+      "human_author": "Theodoros Ploumis <me@theodorosploumis.com>"
+    }
+  }
+}
