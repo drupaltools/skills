@@ -1,0 +1,16 @@
+README.md
+  h_18931ba0e9066f 29
+agents/drupal-code-reviewer.md
+  h_18931ba0e9066f 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a11f9cbb527cb584d1b208ddc337f9f885e841b4",
+  "prompts": {},
+  "humans": {
+    "h_18931ba0e9066f": {
+      "author": "Theodoros Ploumis <me@theodorosploumis.com>"
+    }
+  }
+}
