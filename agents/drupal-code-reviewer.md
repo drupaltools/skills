@@ -6,7 +6,7 @@ description: >-
   session) that would otherwise be reviewing it. Examples include: reviewing
   a custom module before it is committed, scoring a merge request or patch,
   getting a second opinion on code another agent just generated, checking a
-  pulled-request diff for security and cache-metadata defects, deciding
+  pull-request diff for security and cache-metadata defects, deciding
   whether a contribution is ready to submit to Drupal.org, or producing a
   scored review report for a client or tech lead.
 color: red

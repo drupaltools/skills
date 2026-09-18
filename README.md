@@ -26,7 +26,7 @@ git clone https://github.com/drupaltools/skills.git ~/.agents/skills/drupaltools
 |---|---|
 | `drupaltools-best-practices` | Audit code against Drupal best practices |
 | `drupaltools-checklist-development` | Guide teams through Drupal project development checklists |
-| `drupaltools-code-review` | Review and score Drupal code with a weighted rubric and merge verdict |
+| `drupaltools-code-review` | Review and score Drupal code across seven dimensions with a weighted rubric and merge verdict |
 | `drupaltools-code-search` | Search Drupal contrib module source code via GitLab API |
 | `drupaltools-coding-standards` | Check Drupal PHP code with PHPCS and PHPStan |
 | `drupaltools-contrib-gitlab-ci` | Generate GitLab CI for Drupal modules |
