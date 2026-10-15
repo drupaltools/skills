@@ -1,0 +1,20 @@
+.gitignore
+  h_18931ba0e9066f 8
+README.md
+  h_18931ba0e9066f 29
+agents/drupal-code-reviewer.md
+  h_18931ba0e9066f 8-12,26-34,38-59,63,67,69,73,77,109-110,118,131
+skills/drupaltools-code-review/SKILL.md
+  h_18931ba0e9066f 3,16-54,60,62,66-92,102,105,119,122,124,126,139,181,183-184,186-187,218,221,242,248,251,253-255,262,265-266,269-284,287,292,296,299,301,318,329-334,336,341-342,357,365,374,378,387,395,404,412,420
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "16ab4d181f801fcc3d54ec9ffa6787e5c37457ae",
+  "prompts": {},
+  "humans": {
+    "h_18931ba0e9066f": {
+      "author": "Theodoros Ploumis <me@theodorosploumis.com>"
+    }
+  }
+}
