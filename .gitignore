@@ -5,3 +5,4 @@ skills/drupal-*
 skills/.system
 
 *.env
+.commandcode/
